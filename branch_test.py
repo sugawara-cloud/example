@@ -36,6 +36,12 @@ def calc_general(base, over):
  return int(bank)
 
 
+# アルバイト
+def calc_part(unit, time):
+ salary = unit * time
+ tax = salary * tax_rate
+ bank = salary - tax
+ return int(bank)
 if __name__ == "__main__":
     bank_terao = calc_manager(350000, 80000)
     bank_waka = calc_manager(375000, 40000)
@@ -49,3 +55,8 @@ if __name__ == "__main__":
     print(f'寺田帆香さんの振込額={bank_terada}')
     print(f'広田康博さんの振込額={bank_hiro}')
     print(f'菅沼洋一郎さんの振込額={bank_suga}')
+
+ 	bank_kiku = calc_part(1200, 90)
+ 	bank_yama = calc_part(1000, 120)
+ 	print(f'菊地章さんの振込額={bank_kiku}')
+ 	print(f'山岸柑奈さんの振込額={bank_yama}')
