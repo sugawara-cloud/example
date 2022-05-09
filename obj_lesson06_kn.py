@@ -18,7 +18,7 @@ def cal_時間給(w):
 
 
 def cal_社会保険料(w):
-    return round((w['基本給']+w['役職手当']+cal_残業代(w))*0.15, -1)
+    return round((w['基本給']+w['役職手当']+cal_残業代(w))*0.17, -1)
 
 
 def cal_所得税(w):
